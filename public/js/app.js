@@ -24,6 +24,4 @@ weatherForm.addEventListener("submit", (e) => {
       });
     }
   );
-
-  console.log("event clicked", location);
 });
