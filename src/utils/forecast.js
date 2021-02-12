@@ -14,10 +14,11 @@ function forecast({ latitude, longitude } = {}, callback) {
         );
       } else {
         const { current } = body;
-        const { temperature, precip } = current;
+        const { temperature, precip , weather_descriptions } = current;
         callback(null, {
           temperature,
           precip,
+          weather_descriptions: weather_descriptions[0]
         });
       }
     });
